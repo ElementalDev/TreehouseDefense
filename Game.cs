@@ -7,7 +7,15 @@ namespace TreehouseDefense
           
           //Instantiating an object
           
-          Tower tower = new Tower();
+          Map map = new Map();
+          
+          map.width = 8;
+          map.height = 5;
+          
+          int area = map.width * map.height;
+          
+          System.Console.WriteLine(area);
+          System.Console.ReadLine();
           
         }
     }
