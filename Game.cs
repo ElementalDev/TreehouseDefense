@@ -5,7 +5,9 @@ namespace TreehouseDefense
         public static void Main()
         {
           
+          //Instantiating an object
           
+          Tower tower = new Tower();
           
         }
     }
