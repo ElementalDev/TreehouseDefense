@@ -7,12 +7,13 @@ namespace TreehouseDefense
           
           //Instantiating an object
           
-          Map map = new Map();
+          Map map = new Map(8, 5);
           
-          map.width = 8;
-          map.height = 5;
+          //Assigning the fields to a variable
           
-          int area = map.width * map.height;
+          int area = map.Width * map.Height;
+          
+          //Printing result out to the console
           
           System.Console.WriteLine(area);
           System.Console.ReadLine();
