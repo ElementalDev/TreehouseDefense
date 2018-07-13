@@ -1,3 +1,5 @@
+using System;
+
 namespace TreehouseDefense
 {
     class Game
@@ -9,15 +11,21 @@ namespace TreehouseDefense
           
           Map map = new Map(8, 5);
           
-          //Assigning the fields to a variable
+          //Creating a point
+          Point point = new Point(4, 2);
           
-          int area = map.Width * map.Height;
+          //Storing whether the point is on the map
+          bool isOnMap = map.OnMap(point);
           
-          //Printing result out to the console
+          //Print result to console
           
-          System.Console.WriteLine(area);
-          System.Console.ReadLine();
+          Console.WriteLine(isOnMap);
           
+          //Creating a new point (testing to see if it will go out of bounds)
+          point = new Point(8, 5);
+          isOnMap = map.OnMap(point);
+          
+          Console.WriteLine(isOnMap);
         }
     }
 }

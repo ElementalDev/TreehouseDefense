@@ -24,19 +24,22 @@ namespace TreehouseDefense
       //This will return true if all of these conditions are true.
         //NTS: Dont need to use an if statement for every time you need a boolean result
       
-      bool inBounds = point.XCord >= 0 && point.XCord < Width && point.YCord >= 0 && point.YCord < Height;
+      return point.XCord >= 0 && point.XCord < Width && 
+             point.YCord >= 0 && point.YCord < Height;
       
       /* Another way to implement this is like this:
       
-      bool inBounds = !(point.XCord < 0 || point.XCord >= width || point.YCord < 0 || point.YChord >= height);
+       bool inBounds = point.XCord >= 0 && point.XCord < Width && point.YCord >= 0 && point.YCord < Height;
+       
+       OR
+      
+      bool inBounds = !(point.XCord < 0 || point.XCord >= Width || point.YCord < 0 || point.YChord >= Height);
       
       ! = NOT operator
       || = OR operator
       && = AND operator
       
       */
-      
-      return inBounds;
     }
   }
 }
