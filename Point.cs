@@ -39,7 +39,15 @@ namespace TreehouseDefense
         - Less Variables: Less likely to type wrong one in wrong place
         
         DISADV:
-        -No broken up and less readable: Harder to think about
+        -No broken up and less readable: Harder to think about */
+    }
+    
+    //Classes can have multiple methods with the same name in C# with different parameters.
+      //Known as overloading
+    
+    public int DistanceTo(Point point)
+    {
+      return DistanceTo(point.XCoord, point.YCoord);
     }
   }
 }
