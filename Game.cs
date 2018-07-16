@@ -11,10 +11,21 @@ namespace TreehouseDefense
           
           Map map = new Map(8, 5);
           
-          //Creating a point
-          Point point = new Point(4, 2);
+          //Creating a point. Still works as MapLocation Inherits point
+          Point mL = new MapLocation(4, 2);
+         
+          Point p = mL;
           
-          Console.WriteLine(point.DistanceTo(5, 5));
+          map.OnMap(new MapLocation(0, 0));
+          
+          //Therefore being able to use its public methods
+          Console.WriteLine(mL.DistanceTo(5, 5));
+          
+          Console.WriteLine(mL is MapLocation);
+          Console.WriteLine(mL is Point);
+          
+          Point point = new Point(0, 0);
+          Console.WriteLine(point is MapLocation);
         }
     }
 }

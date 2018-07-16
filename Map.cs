@@ -24,8 +24,8 @@ namespace TreehouseDefense
       //This will return true if all of these conditions are true.
         //NTS: Dont need to use an if statement for every time you need a boolean result
       
-      return point.XCord >= 0 && point.XCord < Width && 
-             point.YCord >= 0 && point.YCord < Height;
+      return point.XCoord >= 0 && point.XCoord < Width && 
+             point.YCoord >= 0 && point.YCoord < Height;
       
       /* Another way to implement this is like this:
       
